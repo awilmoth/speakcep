@@ -1,0 +1,12 @@
+#!/bin/bash
+
+running=$(pgrep swift)
+if
+[ -z $running ]
+then
+ STRING=`xsel -o`
+padsp swift $STRING
+else
+killall swift;
+sleep.1;
+fi
